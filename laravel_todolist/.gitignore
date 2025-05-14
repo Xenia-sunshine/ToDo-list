@@ -5,7 +5,7 @@
 /public/storage
 /storage/*.key
 /storage/pail
-/vendor
+vendor
 .env
 .env.backup
 .env.production
@@ -17,7 +17,7 @@ npm-debug.log
 yarn-error.log
 /auth.json
 /.fleet
-/.idea
+.idea
 /.nova
 /.vscode
 /.zed
