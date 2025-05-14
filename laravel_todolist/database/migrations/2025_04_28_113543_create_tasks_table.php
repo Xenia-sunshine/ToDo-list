@@ -4,8 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-return new class extends Migration
-{
+return new class extends Migration {
     /**
      * Run the migrations.
      */
@@ -13,11 +12,10 @@ return new class extends Migration
     {
         Schema::create('tasks', function (Blueprint $table) {
             $table->id();
-            $table->string('title', 255);  // Название задачи (максимальная длина 255)
-            $table->longText('description')->nullable();  // Описание задачи
-            $table->unsignedBigInteger('user_id');// ID пользователя, которому принадлежит задача
+            $table->string('title', 255); // Название задачи (максимальная длина 255)
+            $table->longText('description')->nullable(); // Описание задачи
+            $table->unsignedBigInteger('user_id'); // ID пользователя, которому принадлежит задача
             $table->timestamps();
-
         });
     }
 

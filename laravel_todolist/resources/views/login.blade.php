@@ -96,7 +96,8 @@
 
                 <div class="form-group">
                     <label for="password">Пароль</label>
-                    <input type="password" name="password" id="password" class="form-control" placeholder="Введите пароль">
+                    <input type="password" name="password" id="password" class="form-control"
+                           placeholder="Введите пароль">
                 </div>
 
                 <button type="submit" class="btn btn-success">Отправить</button>

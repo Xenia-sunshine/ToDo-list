@@ -17,7 +17,8 @@
                 <p class="card-text"><small class="text-muted">Создано: {{$data->created_at}}</small></p>
                 <div class="buttons">
                     <a href="{{route('id-form',['id' => $data->id])}}" class="btn btn-primary">Вернуться назад</a>
-                    <a href="{{route('index',['id' => $data->id])}}" class="btn btn-danger">Вернуться на главную страницу</a>
+                    <a href="{{route('index',['id' => $data->id])}}" class="btn btn-danger">Вернуться на главную
+                        страницу</a>
                 </div>
             </div>
         </div>

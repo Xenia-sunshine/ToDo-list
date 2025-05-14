@@ -12,7 +12,8 @@
             @csrf
             <div class="form-group">
                 <label for="user_id">ID пользователя:</label>
-                <input type="number" class="form-control" id="user_id" name="user_id" min="1" required value="{{ old('user_id') }}">
+                <input type="number" class="form-control" id="user_id" name="user_id" min="1" required
+                       value="{{ old('user_id') }}">
                 <div class="invalid-feedback">
                     Пожалуйста, введите корректный ID пользователя.
                 </div>
@@ -20,7 +21,8 @@
 
             <div class="form-group">
                 <label for="title">Название задачи:</label>
-                <input type="text" class="form-control" id="title" name="title" placeholder="Введите название задачи" required value="{{ old('title') }}">
+                <input type="text" class="form-control" id="title" name="title" placeholder="Введите название задачи"
+                       required value="{{ old('title') }}">
                 <div class="invalid-feedback">
                     Пожалуйста, введите название задачи.
                 </div>
@@ -28,7 +30,8 @@
 
             <div class="form-group">
                 <label for="description">Описание задачи:</label>
-                <textarea class="form-control" id="description" name="description" placeholder="Введите описание задачи" rows="4" value="{{ old('description') }}"></textarea>
+                <textarea class="form-control" id="description" name="description" placeholder="Введите описание задачи"
+                          rows="4" value="{{ old('description') }}"></textarea>
             </div>
 
             <button type="submit" class="btn btn-success">Создать</button>
@@ -38,6 +41,7 @@
         body {
             background-color: #f5f5dc;
         }
+
         .container {
             max-width: 900px;
         }
@@ -49,12 +53,12 @@
     </style>
 
     <script>
-        (function() {
+        (function () {
             'use strict';
-            window.addEventListener('load', function() {
+            window.addEventListener('load', function () {
                 var forms = document.getElementsByClassName('needs-validation');
-                var validation = Array.prototype.filter.call(forms, function(form) {
-                    form.addEventListener('submit', function(event) {
+                var validation = Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
                         if (form.checkValidity() === false) {
                             event.preventDefault();
                             event.stopPropagation();

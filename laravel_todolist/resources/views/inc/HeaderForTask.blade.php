@@ -4,9 +4,11 @@
         padding-top: 1rem;
         padding-bottom: 1rem;
     }
+
     .bg-custom {
         background-color: #eed7a7;
     }
+
     .container {
         width: 100%;
         max-width: 1200px; /* Ограничение максимальной ширины */
@@ -40,10 +42,11 @@
         display: inline-block; /* Чтобы можно было задать размеры */
         height: 70px;
     }
+
     .fixed-logo {
         position: fixed;
-        top: 10px;        /* Отступ от верхнего края */
-        left: 10px;       /* Отступ от левого края */
+        top: 10px; /* Отступ от верхнего края */
+        left: 10px; /* Отступ от левого края */
         z-index: 1000;
 
     }
@@ -60,6 +63,7 @@
         margin-right: 10px;
         font-size: 28px
     }
+
     .dropdown {
         display: inline-block; /* Чтобы элементы стояли в ряд */
         position: relative;
@@ -86,7 +90,7 @@
         position: absolute;
         background-color: #f9f9f9;
         min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
         z-index: 1;
         border-radius: 5px;
     }
@@ -121,7 +125,9 @@
         <div class="row align-items-center">
             <div class="col-6">
                 <a class="navbar-brand fixed-logo" href="/">
-                    <img src="https://avatars.mds.yandex.net/i?id=7770313b3de913db227ade717a2fbc26ab49599c-5483025-images-thumbs&n=13" alt="Логотип компании" width="200" height="60">
+                    <img
+                        src="https://avatars.mds.yandex.net/i?id=7770313b3de913db227ade717a2fbc26ab49599c-5483025-images-thumbs&n=13"
+                        alt="Логотип компании" width="200" height="60">
                 </a>
             </div>
             <div class="col-6 text-end">
