@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <style>
         body {
-            background-color:  #f5f5dc;
+            background-color: #f5f5dc;
             font-family: sans-serif;
         }
 
@@ -51,16 +51,16 @@
 <div class="container">
     <div class="task-list">
         <h1>Список моих задач</h1>
-        @include('inc.messages')  -->
+        @include('inc.messages') -->
         <a href="{{ route('id-form-task') }}" class="btn btn-primary mb-3">Мои задачи</a>
     </div>
 
     <div class="task-list">
         <h1>Создать задачу</h1>
-         -->
+        -->
         <a href="{{ route('contact') }}" class="btn btn-success mb-3">Создать задачу</a>
         <ul class="list-group">
-              @csrf
+            @csrf
         </ul>
     </div>
 </div>

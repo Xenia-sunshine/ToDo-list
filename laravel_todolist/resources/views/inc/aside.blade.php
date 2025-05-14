@@ -1,10 +1,11 @@
 <style>
     .welcome-window .btn {
         margin-bottom: 90px;
-        height: 50px ;/* Отталкиваем кнопку вниз */
+        height: 50px; /* Отталкиваем кнопку вниз */
         width: 500px;
         font-size: 19px;
     }
+
     .welcome-window {
         position: fixed;
         bottom: 50%;
@@ -17,9 +18,9 @@
         border-radius: 5px;
         box-shadow: 0 0 10px #964e02;
         display: flex;
-        flex-direction: column;  /* Располагаем элементы друг под другом */
+        flex-direction: column; /* Располагаем элементы друг под другом */
         justify-content: center;
-        align-items: center;      /* Центрируем по горизонтали */
+        align-items: center; /* Центрируем по горизонтали */
     }
 </style>
 <!-- Окно(Организуй свою жизнь)-->

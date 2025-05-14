@@ -28,10 +28,11 @@
 
         .welcome-window .btn {
             margin-bottom: 90px;
-            height: 50px ;
+            height: 50px;
             width: 500px;
             font-size: 19px;
         }
+
         .dropdown-content a {
             color: black;
             padding: 12px 16px;

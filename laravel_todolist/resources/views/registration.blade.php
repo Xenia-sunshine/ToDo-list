@@ -74,6 +74,7 @@
         .bg-red {
             background-color: #eed7a7;
         }
+
         .welcome-registr {
             text-align: center;
             margin-bottom: 10px;
@@ -83,43 +84,43 @@
         }
     </style>
 </head>
-    <div class="container">
-        <div class="login-container">
-            <form action="{{ route('reg-form') }}" method="post">
-                @csrf
-                @include('inc.messages')
-                <div class="form-group">
-                    <div class="welcome-registr">
-                        Добро пожаловать!
-                    </div>
-                    <label for="name">Логин</label>
-                    <input type="text" name="name" id="name" class="form-control" placeholder="Введите логин">
+<div class="container">
+    <div class="login-container">
+        <form action="{{ route('reg-form') }}" method="post">
+            @csrf
+            @include('inc.messages')
+            <div class="form-group">
+                <div class="welcome-registr">
+                    Добро пожаловать!
                 </div>
-
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" class="form-control" placeholder="Введите email">
-                </div>
-
-                <div class="form-group">
-                    <label for="phone">Телефон</label>
-                    <input type="tel" name="phone" id="phone" class="form-control" placeholder="Введите телефон">
-                </div>
-
-                <div class="form-group">
-                    <label for="password">Пароль</label>
-                    <input type="password" name="password" id="password" class="form-control" placeholder="Введите пароль">
-                </div>
-
-                <button type="submit" class="btn btn-success">Отправить</button>
-                <div class="back">
-                    <a href="{{route('login')}}">Войти в аккаунт</a>
-                </div>
-            </form>
-            <div class="back">
-                <a href="{{route('home')}}">Вернуться на главную страницу</a>
+                <label for="name">Логин</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Введите логин">
             </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Введите email">
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Телефон</label>
+                <input type="tel" name="phone" id="phone" class="form-control" placeholder="Введите телефон">
+            </div>
+
+            <div class="form-group">
+                <label for="password">Пароль</label>
+                <input type="password" name="password" id="password" class="form-control" placeholder="Введите пароль">
+            </div>
+
+            <button type="submit" class="btn btn-success">Отправить</button>
+            <div class="back">
+                <a href="{{route('login')}}">Войти в аккаунт</a>
+            </div>
+        </form>
+        <div class="back">
+            <a href="{{route('home')}}">Вернуться на главную страницу</a>
         </div>
     </div>
+</div>
 </body>
 </html>

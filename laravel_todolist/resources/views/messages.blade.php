@@ -1,5 +1,7 @@
 @extends('layouts.appforMessage')
-@section('title-block')Все задачи@endsection
+@section('title-block')
+    Все задачи
+@endsection
 @section('content')
     <!--этот файл отвечает за вывод всех задач пользователей-->
     <style>
