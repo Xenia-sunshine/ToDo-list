@@ -51,9 +51,9 @@
 </head>
 <body>
 
-@include('inc.header')
+@include('header.header')
 <!-- Окно приветствия -->
-@include('inc.aside')
+@include('aside')
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>

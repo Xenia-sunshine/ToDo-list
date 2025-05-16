@@ -47,11 +47,11 @@
     </style>
 </head>
 <body>
-@include('inc.HeaderForTask')
+@include('header.HeaderForTask')
 <div class="container">
     <div class="task-list">
         <h1>Список моих задач</h1>
-        @include('inc.messages') -->
+        @include('errors_messages.messages') -->
         <a href="{{ route('id-form-task') }}" class="btn btn-primary mb-3">Мои задачи</a>
     </div>
 

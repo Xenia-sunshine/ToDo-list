@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 </head>
 <body>
-@include('inc.HeaderForAllmessages')
+@include('header.HeaderForAllmessages')
 
 <div class="container mt-5">
-    @include('inc.messages')
+    @include('errors_messages.messages')
 
 </div>
 

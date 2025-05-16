@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
+
 class Login extends Model
 {
     protected $fillable = [
@@ -12,4 +13,9 @@ class Login extends Model
         'phone',
         'password',
     ];
+
+    public function tasks()
+    {
+        return $this->hasMany(Task::class, 'user_id');
+    }
 }

@@ -87,12 +87,13 @@
 <div class="main-container">
     <h1>Введите свой ID ;)</h1>
     <h3>(можно ввести номер телефона)</h3>
-    @include('inc.messages')
+    @include('errors_messages.messages')
     <form action="{{ route('id-form') }}" method="post">
         @csrf
         <div class="form-group">
             <label for="user_id">Номер пользователя:</label>
-            <input type="number" id="user_id" name="user_id" placeholder="Например: 1" required value="{{ old('user_id') }}">
+            <input type="number" id="user_id" name="user_id" placeholder="Например: 1" required
+                   value="{{ old('user_id') }}">
         </div>
         <button type="submit" class="btn">Подтвердить</button>
         <h3>нужно для управления вашими задачами </h3>

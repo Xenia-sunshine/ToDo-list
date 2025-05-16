@@ -7,20 +7,30 @@ Route::get('/', function () {
 })->name('home');
 
 Route::get('/login', function () {
-    return view('login');
+    return view('authentication.login');
 })->name('login'); //вход
 
 Route::get('/registration', function () {
-    return view('registration'); //регистрация
+    return view('authentication.registration'); //регистрация
 })->name('registration-form');
 
 Route::get('/contact', function () {
-    return view('contact'); // создание задачи
+    return view('tasks.contact'); // создание задачи
 })->name('contact');
 
 Route::get('/index', function () {
-    return view('task.index'); // главная страница создания задач
+    return view('main_page_task.index'); // главная страница создания задач
 })->name('index');
+
+Route::get(
+    '/logins/{login}',
+    [\App\Http\Controllers\ContactController::class, 'showOneLogin']
+)->name('logins.show');
+
+Route::get(
+    '/logins/{login}',
+    [\App\Http\Controllers\RegistrController::class, 'show']
+)->name('logins.show');
 
 Route::post(
     '/contact/submit',
@@ -67,7 +77,7 @@ Route::get(
 )->name('task-delete');
 
 Route::get('/idForm', function () {
-    return view('user_id.idForm'); // форма user
+    return view('tasks.idForm'); // форма user
 })->name('id-form-task');
 
 Route::post(
@@ -81,5 +91,5 @@ Route::get(
 )->name('id-form-task');
 
 Route::get('/instruction', function () {
-    return view('user_id.instruction');
+    return view('manual.instruction'); //инструкция
 })->name('instruction');

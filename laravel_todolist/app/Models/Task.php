@@ -1,8 +1,10 @@
 <?php
 
 namespace App\Models;
+
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+
 
 class Task extends Model
 {
@@ -14,4 +16,9 @@ class Task extends Model
         'user_id',
         'completed'
     ];
+
+    public function user()
+    {
+        return $this->belongsTo(Login::class, 'user_id');
+    }
 }

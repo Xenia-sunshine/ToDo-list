@@ -15,8 +15,14 @@ class RegistrController extends Controller
         // Хэширую пароль для безопасности
         $data['password'] = Hash::make($data['password']);
 
-        Login::create($data);
+        Login::create($data);// Mass Assigment
 
         return redirect()->route('index');
+    }
+
+    // Implicit Binding
+    public function show(Login $login)
+    {
+        return view('logins.show', compact('login'));
     }
 }

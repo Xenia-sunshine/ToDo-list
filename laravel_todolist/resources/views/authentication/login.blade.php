@@ -78,7 +78,7 @@
         <div class="login-container">
             <form action="{{ route('contact-form') }}" method="post">
                 @csrf
-                @include('inc.messages')
+                @include('errors_messages.messages')
                 <div class="form-group">
                     <label for="name">Логин</label>
                     <input type="text" name="name" id="name" class="form-control" placeholder="Введите логин">

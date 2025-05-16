@@ -88,7 +88,7 @@
     <div class="login-container">
         <form action="{{ route('reg-form') }}" method="post">
             @csrf
-            @include('inc.messages')
+            @include('errors_messages.messages')
             <div class="form-group">
                 <div class="welcome-registr">
                     Добро пожаловать!
